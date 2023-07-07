@@ -3,7 +3,7 @@ inputElement.addEventListener('blur', validateInput);
 const inputLength = Number(inputElement.dataset.length);
 
 function validateInput () {
-    if (inputElement.value.length === inputLength) {
+    if (inputElement.value.trim().length === inputLength) {
         inputElement.classList.add ('valid');
         inputElement.classList.remove ('invalid');
     } else {

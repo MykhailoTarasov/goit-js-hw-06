@@ -6,3 +6,5 @@ inputElement.addEventListener ('input', change);
 function change () {
     textElement.style.fontSize = inputElement.value + "px";
 };
+change();
+
